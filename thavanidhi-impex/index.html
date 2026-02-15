@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thavanidhi Impex | Premium Indian Fruit Exporters</title>
+  <style>
+    /* Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f0fdf4, #fefae0);
+      color: #1b4332;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1b4332, #2d6a4f);
+      color: white;
+      padding: 25px 10%;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 14px;
+      margin-top: 5px;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #ffd60a;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      background: url("https://source.unsplash.com/1600x900/?fruit,orchard") no-repeat center/cover;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .hero .overlay {
+      background: rgba(0,0,0,0.5);
+      color: white;
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+    }
+
+    .section {
+      padding: 60px 10%;
+      position: relative;
+    }
+
+    .light-bg {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(4px);
+      border-radius: 12px;
+      margin: 30px 0;
+      padding: 40px;
+    }
+
+    h2 {
+      color: #2d6a4f;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .product-card {
+      margin-bottom: 40px;
+    }
+
+    .product-card img {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 15px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .product-card img:hover {
+      transform: scale(1.05);
+    }
+
+    ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #2d6a4f, #40916c);
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+      user-select: none;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #40916c, #2d6a4f);
+    }
+
+    .gallery {
+      display: none;
+      margin-top: 30px;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      display: flex; /* default flex for when toggled */
+      flex-wrap: wrap;
+    }
+
+    .gallery.hidden {
+      display: none !important;
+    }
+
+    .gallery img {
+      width: 220px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    #contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #1b4332;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .section {
+        padding: 50px 8%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 20px 5%;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      .hero {
+        height: 350px;
+        padding: 0 10px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      .product-card img {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .section {
+        padding: 40px 5%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Thavanidhi Impex</h1>
+  <p>Trusted Exporters of Premium Indian Fruits</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#mango">Mangoes</a>
+    <a href="#pomegranate">Pomegranates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="overlay">
+    <h1>🌿 Welcome to Thavanidhi Impex</h1>
+    <p>Premium Indian Fruits for the Global Market</p>
+    <p>We bring the richness of India’s finest orchards to international buyers with strict quality standards and sustainable sourcing.</p>
+  </div>
+</section>
+
+<section id="about" class="section light-bg">
+  <h2>About Thavanidhi Impex</h2>
+  <p>Thavanidhi Impex is a professional fruit export company specializing in premium-quality mangoes and pomegranates for international buyers. We source directly from carefully selected farms in South India, ensuring natural cultivation, freshness, and strict quality control standards.</p>
+  <p>Our focus is on long-term global partnerships, hygienic packaging, competitive pricing, and reliable shipment schedules.</p>
+</section>
+
+<section id="mango" class="section light-bg">
+  <h2>🥭 Premium Mango Exports</h2>
+
+  <div class="product-card">
+    <h3>1️⃣ Alphonso Mango</h3>
+    <p><em>(Known globally as the “King of Mangoes”)</em></p>
+    <p>Cultivated in selected orchards across: Thiruvallur | Thiruttani | Tirupati</p>
+    <ul>
+      <li>Ideal tropical climate</li>
+      <li>Rich mineral soil</li>
+      <li>Naturally balanced sweetness</li>
+      <li>Handpicked & hygienically packed</li>
+    </ul>
+    <p><strong>Export Features:</strong> Rich aroma, Golden-yellow pulp, High Brix sweetness, Premium export quality</p>
+    <img src="https://source.unsplash.com/400x300/?alphonso,mango" alt="Alphonso Mango" />
+  </div>
+
+  <div class="product-card">
+    <h3>2️⃣ Banganapalli Mango</h3>
+    <p><em>(Also known as “Benishan”)</em></p>
+    <p>Smooth fiberless texture, uniform size, naturally sweet flavor, long shelf life.</p>
+    <ul>
+      <li>Directly sourced from trusted farmers</li>
+      <li>Naturally grown, minimal chemicals</li>
+      <li>Strict quality inspection</li>
+      <li>International export standards</li>
+    </ul>
+    
+  </div>
+
+  <button onclick="toggleGallery('mangoGallery')">View Mango Gallery</button>
+ <div id="mangoGallery" class="gallery">
+        <img src="https://cdn.britannica.com/05/75905-050-C7AE0733/Mangoes-tree.jpg" alt="">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.b-fd1SUmjnvueY3fComquwHaE8?pid=Api&P=0&h=180" alt="">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.cJd-A6FkKNBOpXrRDw9jrQHaDm?pid=Api&P=0&h=180" alt="">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.bmi1iNPgOBQIPXiomQnC0wHaFA?pid=Api&P=0&h=180" alt="">
+        <img src="https://primer.com.ph/blog/wp-content/uploads/sites/14/2022/08/Mangoes-and-other-fruits-from-Unsplash.jpg" alt="">
+    </div>
+</section>
+
+<section id="pomegranate" class="section">
+  <h2>🍎 Premium Pomegranate Exports</h2>
+
+  <div class="product-card">
+    <h3>Hanar Variety – From Karnataka</h3>
+    <p>Cultivated in fertile lands of Karnataka for deep red arils, high juice content, perfect sweetness-to-acidity ratio, strong export durability.</p>
+    <ul>
+      <li>Optimal sunlight & rainfall</li>
+      <li>Ideal soil conditions</li>
+      <li>Strict grading & hygiene</li>
+      <li>Export-ready packaging</li>
+    </ul>
+    
+  </div>
+
+  <button onclick="toggleGallery('pomegranateGallery')">View Pomegranate Gallery</button>
+   <div id="pomegranateGallery" class="gallery">
+        <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2024/03/02/44d639d5eea997bdce3ff5104fdd39911709352420554339_original.PNG?impolicy=abp_cdn&imwidth=1200&height=675" alt="">
+         <img src="https://5.imimg.com/data5/SELLER/Default/2024/3/402385096/BT/US/GH/14225136/export-quality-pomegranate-box-rs-270-500x500.jpg" alt="">
+        <img src="https://elegance-export.com/wp-content/uploads/2022/10/Pomegranate.jpeg" alt="">
+        <img src="https://media.mehrnews.com/d/2023/01/10/4/4388524.jpg?ts=1673339554591" alt="">
+        <img src="https://agro-market24.eu/uploads/photos/95525/sprzedam_fruits-fresh-pomegranate-_agromarket_ceny%20rolnicze-755212-95525.jpg" alt="">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/332347645/UW/TV/UU/33710641/whatsapp-image-2023-08-05-at-2-54-41-pm-1-500x500.jpeg" alt="">
+    </div>
+</section>
+
+<section id="export" class="section light-bg">
+  <h2>📦 Export & Packaging Standards</h2>
+  <ul>
+    <li>Export-grade corrugated cartons</li>
+    <li>Ventilated packaging for freshness</li>
+    <li>Custom private labeling</li>
+    <li>Global compliance documentation</li>
+    <li>Cold chain logistics support</li>
+  </ul>
+</section>
+
+<section id="why" class="section">
+  <h2>🌍 Why Choose Thavanidhi Impex?</h2>
+  <ul>
+    <li>Direct farm sourcing</li>
+    <li>Sustainable agricultural partnerships</li>
+    <li>Strict grading & sorting process</li>
+    <li>On-time shipment</li>
+    <li>Competitive global pricing</li>
+    <li>Commitment to natural quality</li>
+  </ul>
+  <p>We don’t just export fruits — we export the authentic taste of India’s orchards.</p>
+</section>
+
+<section id="contact" class="section light-bg">
+  <h2>International Business Enquiries</h2>
+  <p>We welcome importers, distributors, and wholesale buyers worldwide.</p>
+  <p><strong>Email:</strong> thavanidhiimpex@gmail.com</p>
+  <p><strong>Phone / WhatsApp:</strong> +91 9840842488</p>
+  <p><strong>Export Locations:</strong> Tamil Nadu & Karnataka, India</p>
+</section>
+
+<footer>
+  <p>© 2026 Thavanidhi Impex | Premium Indian Fruit Exporters</p>
+</footer>
+
+<script>
+  function toggleGallery(id) {
+    const gallery = document.getElementById(id);
+    gallery.classList.toggle('hidden');
+  }
+</script>
+
+</body>
+</html>
